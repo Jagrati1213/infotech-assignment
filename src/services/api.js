@@ -29,7 +29,7 @@ api.interceptors.response.use(
     // Handle common errors (e.g., 401 Unauthorized)
     if (error.response?.status === 401) {
       console.error('Unauthorized access - redirecting to signup');
-      window.location.href = '/signup';
+      window.location.href = '/';
     }
     return Promise.reject(error);
   }

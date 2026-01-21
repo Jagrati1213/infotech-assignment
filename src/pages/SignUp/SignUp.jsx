@@ -105,7 +105,7 @@ const SignUp = () => {
           terms: false,
         });
         setErrors({});
-        navigate('/');
+        navigate('/home');
       } else {
         throw new Error(response.data.message || 'Registration failed');
       }
