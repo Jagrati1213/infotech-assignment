@@ -1,0 +1,38 @@
+$primary-color:#2BAAB1;
+$light-gray:#7C7C7C;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color:white;
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: $light-gray;
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
