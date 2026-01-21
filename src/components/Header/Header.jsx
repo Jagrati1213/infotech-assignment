@@ -10,11 +10,11 @@ const Header = () => {
     <header className="header_container">
       <div className="header_content">
         <div className="logo">
-          <Link to={location.pathname === "/signup" ?"#":"/"} className="logo_link">
+          <Link to={location.pathname === "/" ?"#":"/home"} className="logo_link">
             <img src={AppLogoImg} alt={"app logo"}/>
           </Link>
         </div>
-        {location.pathname === "/signup" && <div className='signin_prompt'>
+        {location.pathname === "/" && <div className='signin_prompt'>
             <div className="signin_text">
             Already have an account? <Link to="#" className="signin_link">Sign in</Link>
             </div> 
